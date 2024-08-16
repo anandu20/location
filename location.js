@@ -4,7 +4,10 @@ async function search(){
         const res=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${a}&appid=d82dce617113dc86ab2408e76df76adb`)
         console.log(res);     
         if(res.status==404){
-            console.log("Location not found");
+             document.getElementById("print").innerHTML=`
+              <div class="print1" id="print1">
+            <h2>OOPS!!!! Location not found</h2> 
+            </div>`
         }
         else{
             const weather= await res.json();

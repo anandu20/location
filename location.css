@@ -14,10 +14,13 @@
     align-items: center;
     color: aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./img/skyyy.jpg);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 .parent{
     background-image: url(./img/skyyy.jpg);
-    height: 100vh;
+    height: 120vh;
     object-fit: cover;
     background-position: center;
 }
@@ -45,7 +48,12 @@
     padding:10px 55px;
     border-radius: 15px;
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#txt :focus{
+outline: none;
+}
+
 #btn{
     padding: 10px;
     color: aliceblue;
@@ -115,13 +123,19 @@ td{
 }
 img{
     margin-right: 19px;
+
 }
 
 .top img{
     object-fit: cover;
+    object-position: center;
     width: 35px;
     height: 35px;
     margin-left: 420px;
     margin-top: -30px;
 
 }  
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
